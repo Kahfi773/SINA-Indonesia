@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+}
+
+.middle-container {
+  margin: 0 5%;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 77px;
+  color: black;
+  padding: 40px;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 30px;
+  color: black;
+  padding-bottom: 20px;
+  padding-top: 70px;
+}
+
+.product-card {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 40px 0;
+  border-radius: 33px;
+  float: left;
+  width: 100%;
+  background-color: #f9feff;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.product-card p, .product-card h2 {
+  text-align: left;
+  padding-right: 10%;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.product-card img {
+  border-radius: 59px;
+  max-width: 218px;
+  max-height: 350px;
+  padding: 50px 20px;
+}
+
+.search-bar form {
+    width: 100%;
+    height: 70px;
+    background: #ffd3ba;
+    border-radius: 50px;
+    position: relative;
+}
+
+.search-bar {
+  width: 60%;
+  margin: auto;
+}
+
+.search-bar form input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: calc(100% - 50px);
+    height: 100%;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0 50px;
+    color: #FF7426;
+    font-size: 1.2em;
+    font-style: italic;
+    font-family: Inter;
+}
+
+
+.search-bar form input::placeholder {
+    color: #FF7426;
+    font-size: 1.2em;
+    font-style: italic;
+    font-family: Inter;
+
+}
+
+.categories {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+  padding-bottom: 32px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.category img {
+  max-width: 120px;
+  max-height: 110px;
+  padding-top:30px;
+}
+
+.category {
+  width: 180px;
+  height: 172px;
+  background: linear-gradient(white, #E7FAFE);
+
+  border-radius: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.category p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: -0.02em;
+}
+
+.advanced-filters {
+  margin-top: 40px;
+  padding-bottom: 70px;
+
+  width: 60%;
+  margin: auto;
+  background: #ffd3ba;
+  margin-top: 35px;
+  padding-top:25px;
+  border-radius: 30px;
+  margin-bottom: 40px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.advanced-filters input, .advanced-filters select {
+  text-decoration: none;
+  font-family: 'Inter';
+  padding: 3px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background: white;
+  border: none;
+  font-size:20px;
+  border-radius: 10px;
+}
+
+.advanced-filters button {
+  float: right;
+  margin-right: 30px;
+  color: white;
+  background: black;
+  padding: 20px;
+  border-radius: 17px;
+  font-family: "Inter";
+  cursor: pointer;
+  margin-bottom: auto;
+  font-size:17px;
+  line-height: 13px;
+
+}
+
+.advanced-filters p {
+  font-size: 20px;
+}
+
+.filter {
+  margin-bottom: 15px;
+}
+
+.filter-last {
+  margin-bottom: 5px;
+}
+
+.search-bar form button.btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background: #FF7426;
+    color: #FFF;
+    cursor: pointer;
+    animation: animate 3s infinite;
+    font-size: 28px;
+}
+
+@keyframes animate {
+    0%, 100% {
+        box-shadow: none;
+    }
+    50% {
+        box-shadow: 0 0 0 5px #ffe7da,
+                    0 0 0 10px #ffe7da;
+    }
+}
+
+.search-bar form .inputBox button.btn:hover {
+    animation: none;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+  .search-bar {
+    width: 80%;
+    margin: auto;
+  }
+  .filter-last {
+    margin-bottom: 15px;
+  }
+  .advanced-filters button {
+    float: none;
+    margin-right: 0;
+  }
+  .advanced-filters {
+    width: 100%;
+    padding-bottom: 27px;
+  }
+}
+
+@media only screen and (max-width: 60px) {
+  .search-bar {
+    width: 100%;
+  }
+}
